@@ -1,4 +1,4 @@
-# Exercise Tracker
+# EDM Soundboard
 
 A piano and soundboard inspired by legendary DJ Illenium. Built for FreeCodeCamp's Front-End Libraries certification [(completed in April 2021)](https://www.freecodecamp.org/certification/cvega21/front-end-libraries).
 
