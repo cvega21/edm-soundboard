@@ -1,38 +1,233 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* app and containers  */
+/*  */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
+  background-image: linear-gradient(130deg, rgba(136, 41, 41, 0.952), rgba(0, 0, 0, 0.5));
   min-height: 100vh;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container {
+  /* border-style: dotted; */
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sound-pad-keys-and-fx {
+  /* border: solid rgb(192, 86, 86); */
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: fit-content;
+}
+
+.sound-pad-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1000px;
+  /* border: 5px double rgb(0, 255, 76); */
+}
+
+.Keys {
+  /* border-style: solid; */
+  /* border-color: blue; */
+  position: relative;
+}
+
+.Drums {
+  /* border-style: solid; */
+  /* border-color: rgb(218, 91, 218); */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.active-sound-container {
+  font-size: 20px;
+  /* border: 5px black solid; */
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: center;
+}
+
+/* Logos */
+/*  */
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  height: 175px;
+  margin-bottom: 30px;
+}
+
+.illenium-logo {
+  transition: all 0.5s ease-in-out;
+  width: 400px;
+  height: auto;
+}
+
+.excision-logo-container {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.excision-logo {
+  transition: all 0.5s ease-in-out;
+  width: 400px;
+  height: auto;
+  filter: invert(1) drop-shadow(0 0 0.50rem rgb(49, 49, 49));
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin: -30px 0px 0px 0px;
+}
+
+
+/* Keyboard */
+
+.Keys button {
+  height: 200px;
+  width: 50px;
+  border-style: solid;
+  border-color:rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  transition: all 0.07s cubic-bezier(0, 0, 1, 1);
+}
+
+/* Black Keys */
+
+.Keys button:nth-child(2) {
+  background-color: black;
+  position: absolute;
+  left: 37.5px;
+  width: 25px;
+  height: 150px;
+}
+
+.Keys button:nth-child(4) {
+  background-color: black;
+  position: absolute;
+  left: 87.5px;
+  width: 25px;
+  height: 150px;
+}
+
+.Keys button:nth-child(6) {
+  background-color: black;
+  position: absolute;
+  left: 137.5px;
+  width: 25px;
+  height: 150px;
+}
+
+.Keys button:nth-child(9) {
+  background-color: black;
+  position: absolute;
+  left: 237.5px;
+  width: 25px;
+  height: 150px;
+}
+
+.Keys button:nth-child(11) {
+  background-color: black;
+  position: absolute;
+  left: 287.5px;
+  width: 25px;
+  height: 150px;
+}
+
+.Keys button:nth-child(14) {
+  background-color: black;
+  position: absolute;
+  left: 387.5px;
+  width: 25px;
+  height: 150px;
+}
+
+/* Normal keys */
+
+.Keys button:nth-child(1) {
+  background-color: rgb(147, 203, 255);
+}
+
+.Keys button:nth-child(3) {
+  background-color: rgb(129, 154, 218);
+}
+
+.Keys button:nth-child(5) {
+  background-color: rgb(197, 128, 200);
+}
+
+.Keys button:nth-child(7) {
+  background-color: rgb(241, 126, 174);
+}
+
+.Keys button:nth-child(8) {
+  background-color: rgb(247, 149, 132);
+}
+
+.Keys button:nth-child(10) {
+  background-color: rgb(250, 185, 116);
+}
+
+.Keys button:nth-child(12) {
+  background-color: rgb(247, 220, 115);
+}
+
+.Keys button:nth-child(13) {
+  background-color: rgb(241, 237, 121);
+}
+
+.Keys button:nth-child(15) {
+  background-color: rgb(198, 226, 113);
+}
+
+.Keys button:hover {
+  border-bottom: 4px solid black;
+}
+
+.Keys button:active {
+  box-shadow: 5px 5px 10px rgb(42, 42, 42);
+}
+
+
+/* Drums */
+
+
+Button.kick-button {
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+  font-size: 15px;
+  border: 5px solid black;
+  box-shadow: 5px 5px 10px rgb(42, 42, 42);
+  margin: 5px 35px 5px 35px;
+  transition: all 0.05s cubic-bezier(0, 0, 1, 1);
+}
+
+.kick-button:hover {
+  border: 5px solid black;
+}
+
+.FX > Button {
+  margin: 50px;
+}
+
+.toggle-mode {
+  margin-top: 40px;
+  align-self: center;
+}
+
+#active-note {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
