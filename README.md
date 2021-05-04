@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Exercise Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A piano and soundboard inspired by legendary DJ Illenium. Built for FreeCodeCamp's Front-End Libraries certification [(completed in April 2021)](https://www.freecodecamp.org/certification/cvega21/front-end-libraries).
 
-## Available Scripts
+<img src="https://user-images.githubusercontent.com/54726618/116950978-47618f00-ac4c-11eb-883b-e12db3da4272.gif" width="550" height="450">
 
-In the project directory, you can run:
+## Features
+- 15-key Piano
+- 3 melodic samples
+- Kick and Clap
+- Play with keyboard
+  -   **Kick:** Spacebar
+  -   **Clap:** P
+  -   **Melodic Samples:** Z, X, C
+  -   **Piano Half-Tone Keys**: W, E, R, Y, U, I
+  -   **Piano Full-Tone Keys**: A, S, D, F, G, H, J, K, L
 
-### `yarn start`
+## Libraries Used
+- React
+- Bootstrap
+- useSound
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Audio Samples
+Used with permission from [Slate Digital](https://slatedigital.com/edm-sample-pack-2020). Mixed in Audacity (open source audio editor).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Next Steps
+- Eliminate dependency on useSound custom hook
+- Eliminate dependency on Bootstrap
+- Add a different set of sounds for Excision
+- Create sound objects through a higher order function (e.g. map())
+- Make sounds only playable once (e.g. pressing the button again stops-starts the playback so that the same sound doesn't play concurrently)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_Disclaimer: Illenium and Excision Logos are used under Fair Use. Fair use is a legal doctrine that promotes freedom of expression by permitting the unlicensed use of copyright-protected works in certain circumstances. Section 107 of the Copyright Act provides the statutory framework for determining whether something is a fair use and identifies certain types of uses—such as criticism, comment, news reporting, teaching, scholarship, and research—as examples of activities that may qualify as fair use._
